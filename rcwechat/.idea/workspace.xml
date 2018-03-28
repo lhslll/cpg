@@ -77,7 +77,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rcportal" />
     <property name="go.sdk.automatically.set" value="true" />
   </component>
   <component name="RunDashboard">
