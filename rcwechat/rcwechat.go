@@ -24,6 +24,20 @@ func rcservice(ctx *context.Context) {
 	//设置接收消息的处理方法
 	server.SetMessageHandler(func(msg message.MixMessage) *message.Reply {
 
+		if msg.MsgType == message.MsgTypeEvent {
+
+			switch msg.Event {
+			case message.EventClick:
+
+				text := message.NewText(msg.EventKey)
+				return &message.Reply{MsgType: message.MsgTypeText, MsgData: text}
+
+			default:
+
+			}
+
+		}
+
 		//回复消息：演示回复用户发送的消息
 		text := message.NewText(msg.Content)
 		return &message.Reply{MsgType: message.MsgTypeText, MsgData: text}
